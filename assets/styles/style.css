@@ -11,7 +11,11 @@ html {
 }
 
 .navbar-container {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
     background: #000000;
+    transition: all 0.5s ease;
 }
 
 .navbar-block {
@@ -77,6 +81,95 @@ html {
 .header-block {
     padding-top: 90px;
     padding-bottom: 140px;
+}
+
+.wrapper-hamburger {
+    display: none;
+}
+
+.catalog {
+    display: none;
+}
+
+.catalog {
+    position: fixed;
+    opacity: 0.8;
+    z-index: 999;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background-color: #000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: right 0.8s 0s;
+    width: 20rem;
+    padding: 6rem 4rem 3rem;
+}
+
+.catalog.open {
+    right: 0;
+}
+
+.catalog-btn {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.catalog-btn i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.catalog i:hover {
+    color: #ff8b38;
+}
+
+.catalog-list__item {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.catalog-list__item a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.catalog-list__item:hover a {
+    color: #ff8b38;
+}
+
+.catalog-list__item.active {
+    background-repeat: no-repeat;
+    background-position: right 0 center;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay.active {
+    opacity: 0.25;
+    pointer-events: all;
 }
 
 .main-content {
@@ -357,8 +450,9 @@ html {
 }
 
 .feature-button:hover {
-    color: #333;
-    transition: all 0.5s ease;
+    background: #333333;
+    border: 1px solid #333333;
+    transition: all 0.8s ease;
 }
 
 .awesome-block {
@@ -403,6 +497,7 @@ html {
 .awesome-block-items {
     clear: both;
     margin: auto;
+    list-style-type: none;
     padding-top: 75px;
 }
 
@@ -472,6 +567,7 @@ html {
 
 .pricing-main {
     width: 30%;
+    list-style-type: none;
 }
 
 .name {
@@ -622,6 +718,7 @@ html {
 
 .block-items {
     float: left;
+    list-style-type: none;
     text-align: center;
     box-sizing: border-box;
     width: 23%;
@@ -754,8 +851,9 @@ html {
 }
 
 .form-button:hover {
-    color: #333;
-    transition: all 0.5s ease;
+    background: #333333;
+    border: 1px solid #333333;
+    transition: all 0.8s ease;
 }
 
 .footer {

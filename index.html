@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title>hw1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axit-landing</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/styles/all.css" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="assets/styles/media.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/all.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/media.css" />
+    <link rel="stylesheet" type="./text/css" media="screen" href="styles.css" />
+    <script src="./index.js" defer></script>
 </head>
 
 <body>
@@ -26,19 +27,35 @@
                     <li class="navbar-item"><a class="link" href="#reviews">Reviews</a></li>
                     <li class="navbar-item"><a class="link" href="#contact">Contact</a></li>
                 </ul>
+                <div class="wrapper-hamburger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
             </nav>
+        </div>
+        <div class="catalog">
+            <div class="btn btn-close catalog-btn" id="hnf-menu-close-btn">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            </button>
+            <ul class="catalog-list">
+                <li class="catalog-list__item"><a class="link" href="#features">Features</a></li>
+                <li class="catalog-list__item"><a class="link" href="#about">About</a></li>
+                <li class="catalog-list__item"><a class="link" href="#pricing">Pricing</a></li>
+                <li class="catalog-list__item"><a class="link" href="#reviews">Reviews</a></li>
+                <li class="catalog-list__item"><a class="link" href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
     <section class="header-container">
         <div class="container header-block clearfix">
-            <main class="main-content">
+            <div class="main-content">
                 <p class="main-logo">ax<span class="main-span">it</span></p>
                 <h2 class="main-title">Modern axure template for beautiful prototypes</h2>
                 <p class="content main-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                 </p>
                 <button class="button main-button">Download</button>
-            </main>
+            </div>
             <div class="panel-form">
                 <form class="signap-content">
                     <h4 class="signap-title">Try Your <span class="free-span">free</span> Trial Today</h4>
@@ -82,7 +99,7 @@
             </div>
             <div class="feature-main-block">
                 <div class="feature-image-block">
-                    <img class="feature-image" src="assets/images/home.png" />
+                    <img class="feature-image" src="assets/images/home.png" alt="city" />
                 </div>
                 <div class="feature-main">
                     <h3 class="feature-title">Tabs with soft transitioning effect.</h3>
@@ -102,8 +119,8 @@
         <p class="content awesome-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-        <div class="awesome-block-items clearfix">
-            <div class="block-item">
+        <ul class="awesome-block-items clearfix">
+            <li class="block-item">
                 <div class="icon">
                     <i class="fas fa-lightbulb"></i>
                 </div>
@@ -111,8 +128,8 @@
                 <p class="content-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                 </p>
-            </div>
-            <div class="block-item">
+            </li>
+            <li class="block-item">
                 <div class="icon">
                     <i class="far fa-keyboard"></i>
                 </div>
@@ -120,8 +137,8 @@
                 <p class="content-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                 </p>
-            </div>
-            <div class="block-item">
+            </li>
+            <li class="block-item">
                 <div class="icon">
                     <i class="fas fa-bolt"></i>
                 </div>
@@ -129,8 +146,8 @@
                 <p class="content-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                 </p>
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
     <section id="pricing" class="pricing-container">
         <div class="container">
@@ -138,8 +155,8 @@
             <p class="content pricing-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <div class="pricing-block">
-                <div class="pricing-main">
+            <ul class="pricing-block">
+                <li class="pricing-main">
                     <div class="name">Basic</div>
                     <p class="value"><span>&#36;</span>0</p>
                     <p class="info">Free for life</p>
@@ -151,8 +168,8 @@
                         <li class="pricing-item">wordpress integration</li>
                         <li class="pricing-item">email support</li>
                     </ul>
-                </div>
-                <div class="pricing-main">
+                </li>
+                <li class="pricing-main">
                     <p class="name">Professional</p>
                     <p class="value"><span>&#36;</span>19</p>
                     <p class="info">Monthly Payment</p>
@@ -165,8 +182,8 @@
                         <li class="pricing-item">wordpress integration</li>
                         <li class="pricing-item">email support</li>
                     </ul>
-                </div>
-                <div class="pricing-main">
+                </li>
+                <li class="pricing-main">
                     <p class="name">Enterprise</p>
                     <p class="value"><span>&#36;</span>70</p>
                     <p class="info">Monthly Payment</p>
@@ -178,8 +195,8 @@
                         <li class="pricing-item">Wordpress integration</li>
                         <li class="pricing-item">24/7 customer support</li>
                     </ul>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
     <section id="reviews" class="container awesome-block">
@@ -187,44 +204,44 @@
         <p class="content awesome-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-        <div class="awesome-block-items clearfix">
-            <div class="block-items">
+        <ul class="awesome-block-items clearfix">
+            <li class="block-items">
                 <p class="content-texts">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="assets/images/man.png" alt="" />
+                    <img class="comment-image" src="assets/images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">Jeremy H.</h3>
                         <p class="profession-user">Manager</p>
                     </div>
                 </div>
-            </div>
-            <div class="block-items">
+            </li>
+            <li class="block-items">
                 <p class="content-texts">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="assets/images/man.png" alt="" />
+                    <img class="comment-image" src="assets/images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">John S.</h3>
                         <p class="profession-user">Freelancer</p>
                     </div>
                 </div>
-            </div>
-            <div class="block-items">
+            </li>
+            <li class="block-items">
                 <p class="content-texts">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="assets/images/man.png" alt="" />
+                    <img class="comment-image" src="assets/images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">Susan W.</h3>
                         <p class="profession-user">Photographer</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
     <div class="custom-block">
         <div class="container stylish-block">
