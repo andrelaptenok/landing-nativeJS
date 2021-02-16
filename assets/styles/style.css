@@ -11,11 +11,19 @@ html {
 }
 
 .navbar-container {
-    position: fixed;
+    position: flex;
     width: 100%;
     z-index: 3;
     background: #000000;
     transition: all 0.5s ease;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    animation-name: box;
+    animation-duration: 0.5s;
 }
 
 .navbar-block {
@@ -56,6 +64,10 @@ html {
 .link:hover {
     color: #ff8b38;
     transition: all 0.5s ease;
+}
+
+.link-active {
+    color: #ff8b38;
 }
 
 .navbar-items {

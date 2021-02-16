@@ -39,6 +39,13 @@
     .catalog-btn {
         top: 2rem;
     }
+    .content {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .content-texts {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
