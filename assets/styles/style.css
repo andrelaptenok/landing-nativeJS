@@ -88,6 +88,7 @@ html {
 .header-container {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.52) 52%, rgba(0, 0, 0, 0.52) 52%), url('../images/state.png') no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .header-block {
@@ -896,7 +897,7 @@ html {
 
 .reserved {
     margin: 0;
-    padding-top: 13px;
+    padding: 15px 0 15px;
     text-align: center;
     font-size: 12px;
     color: #ffffff;
