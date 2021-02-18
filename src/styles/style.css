@@ -279,6 +279,8 @@ html {
 .signap-input-block {
     background: #ffffff;
     padding: 30px 35px 50px 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 .signap-input {
@@ -288,6 +290,7 @@ html {
     margin-bottom: 40px;
     padding: 5px 20px;
     border-bottom: 1px solid #d6d6d6;
+    color: #bdbdbd;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -495,9 +498,9 @@ html {
 
 .content {
     margin: 0;
-    font-size: 14px;
-    line-height: 22px;
-    color: #86878b;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #b9b9bd;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -602,7 +605,7 @@ html {
     font-size: 94px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1;
 }
 

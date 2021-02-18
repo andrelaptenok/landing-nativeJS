@@ -5,16 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Axit-landing</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/styles/normalize.css" />
-    <link rel="stylesheet" href="./assets/styles/all.css" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link rel="stylesheet" href="./assets/styles/media.css" />
-    <link rel="stylesheet" type="./text/css" media="screen" href="styles.css" />
-    <link rel="stylesheet" href="./assets/styles/animate.css">
-    <script src="./index.js" defer></script>
-    <script src="./wow.min.js"></script>
+    <link rel="stylesheet" href="./src/styles/normalize.css" />
+    <link rel="stylesheet" href="./src/styles/all.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/media.css" />
+    <link rel="stylesheet" href="./src/styles/animate.css">
+    <script src="./src/js/index.js" defer></script>
+    <script src="./src/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -83,8 +80,7 @@
                 </p>
             </div>
             <div class="bar-social-block">
-                <a href="#" class="bar-social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="bar-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="bar-social"><i class="fab fa-facebook-f"></i></a> <a href="#" class="bar-social"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="bar-social"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#" class="bar-social"><i class="fab fa-pinterest"></i></a>
                 <a href="#" class="bar-social"><i class="fab fa-instagram"></i></a>
@@ -104,7 +100,7 @@
             </div>
             <div class="feature-main-block">
                 <div class="feature-image-block wow animate__animated animate__slideInRight">
-                    <img class="feature-image" src="assets/images/home.png" alt="city" />
+                    <img class="feature-image" src="src/images/home.png" alt="city" />
                 </div>
                 <div class="feature-main wow animate__animated animate__fadeInUp">
                     <h3 class="feature-title">Tabs with soft transitioning effect.</h3>
@@ -215,7 +211,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="assets/images/man.png" alt="worker" />
+                    <img class="comment-image" src="src/images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">Jeremy H.</h3>
                         <p class="profession-user">Manager</p>
@@ -227,11 +223,12 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="assets/images/man.png" alt="worker" />
+                    <img class="comment-image" src="src/images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">John S.</h3>
                         <p class="profession-user">Freelancer</p>
                     </div>
+
                 </div>
             </li>
             <li class="block-items wow animate__animated animate__slideInRight">
@@ -239,7 +236,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="assets/images/man.png" alt="worker" />
+                    <img class="comment-image" src="src/images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">Susan W.</h3>
                         <p class="profession-user">Photographer</p>
@@ -249,7 +246,7 @@
         </ul>
     </section>
     <section class="custom-block">
-        <div class="container stylish-block wow animate__animated animate__fadeInUp">
+        <div class="container stylish-block wow animate__animated animate__fadeIn">
             <h2 class="custom-title">Stylish axure design</h2>
             <p class="content custom-text">
                 Use the sections you need, remove the ones you don't. Create gorgeous prololypes faster than ever!
@@ -278,14 +275,14 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <div class="socials footer-block wow animate__animated animate__fadeInUp">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-pinterest"></i></a>
-                <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social"><i class="fab fa-stumbleupon"></i></a>
-                <a href="#" class="social"><i class="fas fa-wifi"></i></a>
+            <div class="socials footer-block">
+                <a href="#" class="social"><i class="fab fa-facebook-f wow animate__animated animate__slideInLeft"></i></a>
+                <a href="#" class="social"><i class="fab fa-twitter wow animate__animated animate__slideInLeft"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g wow animate__animated animate__slideInLeft"></i></a>
+                <a href="#" class="social"><i class="fab fa-pinterest wow animate__animated animate__slideInLeft"></i></a>
+                <a href="#" class="social"><i class="fab fa-instagram wow animate__animated animate__slideInLeft"></i></a>
+                <a href="#" class="social"><i class="fab fa-stumbleupon wow animate__animated animate__slideInLeft"></i></a>
+                <a href="#" class="social"><i class="fas fa-wifi wow animate__animated animate__slideInLeft"></i></a>
             </div>
             <p class="reserved">&copy; 2015 Axure Themes</p>
         </div>
