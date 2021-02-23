@@ -62,11 +62,11 @@
                 <form class="signap-content">
                     <h4 class="signap-title">Try Your <span class="free-span">free</span> Trial Today</h4>
                     <div class="signap-input-block">
-                        <input class="signap-input" type="text" required placeholder="Name" />
-                        <input class="signap-input" type="email" required placeholder="Email" />
-                        <input class="signap-input" type="password" required placeholder="Password" />
+                        <input id='name-signap' class="signap-input" type="text" placeholder="Name" pattern="[a-zA-Zа-яА-Я]+" required />
+                        <input id='email-signap' class="signap-input" type="email" placeholder="Email" required />
+                        <input id='password-signap' class="signap-input" type="password" autocomplete="on" placeholder="Password" />
                     </div>
-                    <button type="submit" class="btn-signap">Get started</button>
+                    <button id='submit-signap' type="submit" class="btn-signap">Get started</button>
                 </form>
             </div>
         </div>
@@ -80,7 +80,8 @@
                 </p>
             </div>
             <div class="bar-social-block">
-                <a href="#" class="bar-social"><i class="fab fa-facebook-f"></i></a> <a href="#" class="bar-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="bar-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="bar-social"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="bar-social"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#" class="bar-social"><i class="fab fa-pinterest"></i></a>
                 <a href="#" class="bar-social"><i class="fab fa-instagram"></i></a>
@@ -259,18 +260,18 @@
         <p class="content awesome-content wow animate__animated animate__fadeInDown">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-        <form action="#" class="form-block-content">
+        <form action="#" method="POST" class="form-block-content">
             <div class="form-block">
                 <div class="input-block wow animate__animated animate__slideInLeft">
-                    <input class="form-input" type="text" placeholder="Name" />
-                    <input class="form-input" type="email" placeholder="Email" />
-                    <input class="form-input" type="text" placeholder="Subject" />
+                    <input id="name-input" class="form-input" type="text" placeholder="Name" required pattern="[a-zA-Zа-яА-Я]+" />
+                    <input id="email" class="form-input" type="email" placeholder="Email" required />
+                    <input id='subject' class="form-input" type="text" placeholder="Subject" />
                 </div>
                 <div class="area-block wow animate__animated animate__slideInRight">
-                    <textarea class="area" placeholder="Message" name="Message" id="#"></textarea>
+                    <textarea id='area-text' class="area" placeholder="Message" name="Message" id="#"></textarea>
                 </div>
             </div>
-            <button type="submit" class="form-button">Sed Message</button>
+            <button id='submit' class="form-button" type="submit">Sed Message</button>
         </form>
     </section>
     <footer class="footer">
