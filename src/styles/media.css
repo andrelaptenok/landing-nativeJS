@@ -1,20 +1,8 @@
-@media (min-width: 768px) and (max-width: 1108px) {
+@media (min-width: 768px) and (max-width: 1280px) {
     .navbar-container {
         position: fixed;
         width: 100%;
         z-index: 3;
-    }
-    .wrapper-hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .wrapper-hamburger i {
-        font-size: 30px;
-        transition: all 0.5s ease;
-        color: #fff;
-    }
-    .navbar-items {
-        display: none;
     }
     .bar-container-blocks {
         display: block;
@@ -31,13 +19,6 @@
     .bar-social {
         padding-right: 5%;
         font-size: 32px;
-    }
-    .catalog {
-        display: block;
-        padding: 4rem 3rem 2rem;
-    }
-    .catalog-btn {
-        top: 2rem;
     }
     .content {
         font-size: 18px;
@@ -88,6 +69,9 @@
         padding-right: 5%;
         font-size: 32px;
     }
+    .feature-container {
+        padding-top: 80px;
+    }
     .feature-main-block {
         overflow: none;
     }
@@ -127,13 +111,13 @@
     .block-item:last-child {
         margin-bottom: 0;
     }
-    .block-items {
+    .block-items_comment {
         float: none;
         width: 100%;
         margin-right: 0;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
     }
-    .block-item:last-child {
+    .block-items_comment:last-child {
         margin-bottom: 0;
     }
     .form-block {
@@ -151,10 +135,26 @@
         padding-left: 10px;
     }
     .catalog {
+        display: block;
         padding: 2rem 3rem 2rem;
     }
+    .catalog-list {
+        margin-top: 30px;
+    }
     .catalog-btn {
-        top: 1rem;
+        top: 2rem;
+    }
+    .wrapper-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .wrapper-hamburger i {
+        font-size: 30px;
+        transition: all 0.5s ease;
+        color: #fff;
+    }
+    .navbar-items {
+        display: none;
     }
 }
 
@@ -162,9 +162,8 @@
     .navbar-items {
         display: block;
     }
-    .navbar-item {
-        padding-right: 0;
-        padding-bottom: 5px;
+    .navbar-items {
+        display: none;
     }
     .main-content {
         float: none;
@@ -184,7 +183,10 @@
         margin: auto;
     }
     .signap-content {
-        max-width: 100%;
+        max-width: 700px;
+    }
+    .signap-input-block {
+        padding: 20px 15px 30px 15px;
     }
     .signap-title {
         font-size: 14px;
@@ -208,6 +210,9 @@
     .feature-main-block {
         overflow: none;
     }
+    .feature-container {
+        padding-top: 80px;
+    }
     .feature-block {
         float: none;
         margin-right: 0;
@@ -219,6 +224,7 @@
     }
     .feature-item {
         width: 33%;
+        padding: 10px 0;
         list-style-type: none;
     }
     .feature-item:last-child {
@@ -241,11 +247,15 @@
     .awesome-block {
         padding-top: 40px;
     }
+    .awesome-block-items {
+        padding-left: 0;
+    }
     .pricing-block {
         display: block;
+        padding-left: 0;
     }
     .pricing-main {
-        width: 80%;
+        width: 90%;
         padding-bottom: 50px;
         margin: auto;
     }
@@ -260,13 +270,13 @@
     .block-item:last-child {
         margin-bottom: 0;
     }
-    .block-items {
+    .block-items_comment {
         float: none;
         width: 100%;
         margin-right: 0;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
     }
-    .block-item:last-child {
+    .block-items_comment:last-child {
         margin-bottom: 0;
     }
     .form-block {
@@ -285,5 +295,24 @@
     }
     .social {
         margin-right: 14px;
+    }
+    .catalog {
+        display: block;
+        padding: 2rem 3rem 2rem;
+    }
+    .catalog-btn {
+        top: 2rem;
+    }
+    .catalog-list {
+        margin-top: 50px;
+    }
+    .wrapper-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .wrapper-hamburger i {
+        font-size: 30px;
+        transition: all 0.5s ease;
+        color: #fff;
     }
 }
