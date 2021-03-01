@@ -11,7 +11,7 @@ html {
 }
 
 .navbar-container {
-    position: flex;
+    position: absolute;
     width: 100%;
     z-index: 3;
     background: #000000;
@@ -22,7 +22,6 @@ html {
     position: fixed;
     width: 100%;
     z-index: 3;
-    animation-name: box;
     animation-duration: 0.5s;
 }
 
@@ -872,7 +871,6 @@ html {
 }
 
 .form-button {
-    width: 145px;
     padding: 12px 22px;
     border: 1px solid #ff8b38;
     background: #ff8b38;

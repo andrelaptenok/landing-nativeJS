@@ -5,18 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Axit-landing</title>
-    <link rel="shortcut icon" href="/src/images/favicons.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./src/styles/normalize.css" />
-    <link rel="stylesheet" href="./src/styles/all.css" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="stylesheet" href="./src/styles/preloader.css" />
-    <link rel="stylesheet" href="./src/styles/media.css" />
-    <link rel="stylesheet" href="./src/styles/animate.css">
-    <script src="./src/js/index.js" defer></script>
-    <script src="./src/js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <link rel="icon" type="image/png" href="./images/favicons.png" />
+    <link rel="stylesheet" href="./styles/normalize.min.css" />
+    <link rel="stylesheet" href="./styles/all.min.css" />
+    <link rel="stylesheet" href="./styles/style.min.css" />
+    <link rel="stylesheet" href="./styles/preloader.min.css" />
+    <link rel="stylesheet" href="./styles/media.min.css" />
+    <script src="./js/index.min.js" defer></script>
 </head>
 
 <body>
@@ -40,7 +35,6 @@
             <div class="btn btn-close catalog-btn" id="hnf-menu-close-btn">
                 <i class="fa fa-times" aria-hidden="true"></i>
             </div>
-            </button>
             <ul class="catalog-list">
                 <li class="catalog-list__item"><a class="link" href="#features">Features</a></li>
                 <li class="catalog-list__item"><a class="link" href="#about">About</a></li>
@@ -52,7 +46,7 @@
     </header>
     <section class="header-container">
         <div class="container header-block clearfix">
-            <div class="main-content wow animate__animated animate__slideInLeft">
+            <div class="main-content">
                 <p class="main-logo">ax<span class="main-span">it</span></p>
                 <h2 class="main-title">Modern axure template for beautiful prototypes</h2>
                 <p class="content main-text">
@@ -60,7 +54,7 @@
                 </p>
                 <button class="button main-button">Download</button>
             </div>
-            <div class="panel-form wow animate__animated animate__slideInRight">
+            <div class="panel-form">
                 <form class="signap-content" action="#" method="POST">
                     <p class="signap-title">Try Your <span class="free-span">free</span> Trial Today</p>
                     <div class="signap-input-block">
@@ -75,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section class="bar-container wow animate__animated animate__slideInLeft">
+    <section class="bar-container">
         <div class="container bar-container-blocks">
             <div class="bar-block">
                 <h3 class="bar-title">Social Media</h3>
@@ -95,7 +89,7 @@
     </section>
     <section id="features" class="feature-container-block">
         <div class="container feature-container clearfix">
-            <div class="feature-block wow animate__animated animate__slideInLeft">
+            <div class="feature-block">
                 <ul class="feature-items-block">
                     <li class="feature-item">Tab 1</li>
                     <li class="feature-item">Tab 2</li>
@@ -103,10 +97,10 @@
                 </ul>
             </div>
             <div class="feature-main-block">
-                <div class="feature-image-block wow animate__animated animate__slideInRight">
-                    <img class="feature-image" src="src/images/home.png" alt="city" />
+                <div class="feature-image-block">
+                    <img class="feature-image" src="./images/home.png" alt="city" />
                 </div>
-                <div class="feature-main wow animate__animated animate__fadeInUp">
+                <div class="feature-main animate__fadeInUp">
                     <h3 class="feature-title">Tabs with soft transitioning effect.</h3>
                     <p class="content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
@@ -120,12 +114,12 @@
         </div>
     </section>
     <section id="about" class="container awesome-block">
-        <h2 class="title wow animate__animated animate__fadeInDown">Why this is awesome</h2>
-        <p class="content awesome-content wow animate__animated animate__fadeInDown">
+        <h2 class="title">Why this is awesome</h2>
+        <p class="content awesome-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <ul class="awesome-block-items clearfix">
-            <li class="block-item wow animate__animated animate__slideInLeft">
+            <li class="block-item">
                 <div class="icon">
                     <i class="fas fa-lightbulb"></i>
                 </div>
@@ -134,7 +128,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                 </p>
             </li>
-            <li class="block-item wow animate__animated animate__fadeInUp">
+            <li class="block-item animate__fadeInUp">
                 <div class="icon">
                     <i class="far fa-keyboard"></i>
                 </div>
@@ -143,7 +137,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                 </p>
             </li>
-            <li class="block-item wow animate__animated animate__slideInRight">
+            <li class="block-item">
                 <div class="icon">
                     <i class="fas fa-bolt"></i>
                 </div>
@@ -156,12 +150,12 @@
     </section>
     <section id="pricing" class="pricing-container">
         <div class="container">
-            <h2 class="title wow animate__animated animate__fadeInDown">Pricing options</h2>
-            <p class="content pricing-content wow animate__animated animate__fadeInDown">
+            <h2 class="title">Pricing options</h2>
+            <p class="content pricing-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <ul class="pricing-block">
-                <li class="pricing-main wow animate__animated animate__slideInLeft">
+                <li class="pricing-main">
                     <div class="name">Basic</div>
                     <p class="value"><span>&#36;</span>0</p>
                     <p class="info">Free for life</p>
@@ -175,7 +169,7 @@
                         <li class="pricing-item">email support</li>
                     </ul>
                 </li>
-                <li class="pricing-main wow animate__animated animate__fadeInUp">
+                <li class="pricing-main animate__fadeInUp">
                     <p class="name">Professional</p>
                     <p class="value"><span>&#36;</span>19</p>
                     <p class="info">Monthly Payment</p>
@@ -189,7 +183,7 @@
                         <li class="pricing-item">email support</li>
                     </ul>
                 </li>
-                <li class="pricing-main wow animate__animated animate__slideInRight">
+                <li class="pricing-main">
                     <p class="name">Enterprise</p>
                     <p class="value"><span>&#36;</span>70</p>
                     <p class="info">Monthly Payment</p>
@@ -207,42 +201,41 @@
         </div>
     </section>
     <section id="reviews" class="container awesome-block">
-        <h2 class="title wow animate__animated animate__fadeInDown">What our customers are saying</h2>
-        <p class="content awesome-content wow animate__animated animate__fadeInDown">
+        <h2 class="title">What our customers are saying</h2>
+        <p class="content awesome-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <ul class="awesome-block-items clearfix">
-            <li class="block-items_comment wow animate__animated animate__slideInLeft">
+            <li class="block-items_comment">
                 <p class="content-texts">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="src/images/man.png" alt="worker" />
+                    <img class="comment-image" src="./images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">Jeremy H.</h3>
                         <p class="profession-user">Manager</p>
                     </div>
                 </div>
             </li>
-            <li class="block-items_comment wow animate__animated animate__fadeInUp">
+            <li class="block-items_comment animate__fadeInUp">
                 <p class="content-texts">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="src/images/man.png" alt="worker" />
+                    <img class="comment-image" src="./images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">John S.</h3>
                         <p class="profession-user">Freelancer</p>
                     </div>
-
                 </div>
             </li>
-            <li class="block-items_comment wow animate__animated animate__slideInRight">
+            <li class="block-items_comment">
                 <p class="content-texts">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                 </p>
                 <div class="comment-block">
-                    <img class="comment-image" src="src/images/man.png" alt="worker" />
+                    <img class="comment-image" src="./images/man.png" alt="worker" />
                     <div class="user-block">
                         <h3 class="name-user">Susan W.</h3>
                         <p class="profession-user">Photographer</p>
@@ -251,8 +244,8 @@
             </li>
         </ul>
     </section>
-    <section class="custom-block">
-        <div class="container stylish-block wow animate__animated animate__fadeIn">
+    <section class="custom-block webp">
+        <div class="container stylish-block animate__fadeIn">
             <h2 class="custom-title">Stylish axure design</h2>
             <p class="content custom-text">
                 Use the sections you need, remove the ones you don't. Create gorgeous prololypes faster than ever!
@@ -261,19 +254,19 @@
         </div>
     </section>
     <section id="contact" class="container awesome-block">
-        <h2 class="title wow animate__animated animate__fadeInDown">Contact us</h2>
-        <p class="content awesome-content wow animate__animated animate__fadeInDown">
+        <h2 class="title">Contact us</h2>
+        <p class="content awesome-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <form action="#" method="POST" class="form-block-content">
             <div class="form-block">
-                <div class="input-block wow animate__animated animate__slideInLeft">
+                <div class="input-block">
                     <input id="name-input" class="form-input" type="text" placeholder="Name" required pattern="[a-zA-Zа-яА-Я]+" />
                     <input id="email" class="form-input" type="email" placeholder="Email" required />
                     <input id='subject' class="form-input" type="text" placeholder="Subject" />
                 </div>
-                <div class="area-block wow animate__animated animate__slideInRight">
-                    <textarea id='area-text' class="area" placeholder="Message" name="Message" id="#"></textarea>
+                <div class="area-block">
+                    <textarea id='area-text' class="area" placeholder="Message" name="Message"></textarea>
                 </div>
             </div>
             <button id='submit' class="form-button" type="submit">Send Message</button>
@@ -282,13 +275,13 @@
     <footer class="footer">
         <div class="container">
             <div class="socials footer-block">
-                <a href="#" class="social"><i class="fab fa-facebook-f wow animate__animated animate__slideInLeft"></i></a>
-                <a href="#" class="social"><i class="fab fa-twitter wow animate__animated animate__slideInLeft"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g wow animate__animated animate__slideInLeft"></i></a>
-                <a href="#" class="social"><i class="fab fa-pinterest wow animate__animated animate__slideInLeft"></i></a>
-                <a href="#" class="social"><i class="fab fa-instagram wow animate__animated animate__slideInLeft"></i></a>
-                <a href="#" class="social"><i class="fab fa-stumbleupon wow animate__animated animate__slideInLeft"></i></a>
-                <a href="#" class="social"><i class="fas fa-wifi wow animate__animated animate__slideInLeft"></i></a>
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social"><i class="fab fa-stumbleupon"></i></a>
+                <a href="#" class="social"><i class="fas fa-wifi"></i></a>
             </div>
             <p class="reserved">&copy; 2015 Axure Themes</p>
         </div>
