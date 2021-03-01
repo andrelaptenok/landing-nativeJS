@@ -13,14 +13,14 @@ const path = {
         html: source_folder + '/*.html',
         css: source_folder + '/styles/*.css',
         js: source_folder + '/js/**/*.js',
-        img: source_folder + '/images/**/*.{png,ico}',
+        img: source_folder + '/images/**/*.png',
         fonts: source_folder + '/fonts/*.{ttf,woff,woff2}',
     },
     watch: {
         html: source_folder + '/**/*.html',
         css: source_folder + '/styles/*.css',
         js: source_folder + '/js/**/*.js',
-        img: source_folder + '/images/**/*.{png,ico}',
+        img: source_folder + '/images/**/*.png',
     },
     clean: './' + project_folder + '/',
 };
@@ -33,7 +33,6 @@ const { src, dest } = require('gulp'),
     gcmq = require('gulp-group-css-media-queries'),
     cleanCss = require('gulp-clean-css'),
     rename = require('gulp-rename'),
-    fileinclude = require('gulp-file-include'),
     uglify = require('gulp-uglify-es').default,
     imagemin = require('gulp-imagemin'),
     webp = require('gulp-webp'),
@@ -80,10 +79,6 @@ function css() {
 
 function js() {
     return src(path.src.js)
-        .pipe(fileinclude({
-            prefix: '@'
-        }))
-        .pipe(dest(path.build.js))
         .pipe(uglify())
         .pipe(
             rename({
