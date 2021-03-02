@@ -387,6 +387,11 @@ html {
     margin-right: 10%;
 }
 
+#feature-active {
+    background: #ff8b38;
+    border: 1px solid #ff8b38;
+}
+
 .feature-main-block {
     overflow: hidden;
 }
@@ -699,12 +704,6 @@ html {
     margin-left: 14px;
     text-align: left;
     margin-top: 15px;
-}
-
-.comment-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
 }
 
 .profession-user {

@@ -144,3 +144,17 @@ testWebP(function(support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+
+//Tab content
+const featureBtn = document.querySelectorAll('.feature-item');
+const text = document.querySelector('.feature-title');
+
+featureBtn.forEach((el) => {
+    el.addEventListener('click', () => {
+        featureBtn.forEach((el) => {
+            el.removeAttribute('id', 'feature-active');
+        });
+        el.setAttribute('id', 'feature-active');
+        text.innerHTML = `${el.innerHTML} with soft transitioning effect.`;
+    });
+});
