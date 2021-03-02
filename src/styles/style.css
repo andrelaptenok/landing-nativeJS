@@ -66,6 +66,7 @@ html {
 
 .link-active {
     color: #ff8b38;
+    transition: all 1s ease;
 }
 
 .navbar-items {

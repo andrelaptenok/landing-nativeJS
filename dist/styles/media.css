@@ -40,6 +40,10 @@
     padding-right: 40px;
   }
 
+  .header-container {
+    background-attachment: scroll;
+  }
+
   .main-content {
     float: none;
     width: 100%;
@@ -228,6 +232,10 @@
 
   .navbar-items {
     display: none;
+  }
+
+  .header-container {
+    background-attachment: scroll;
   }
 
   .main-content {

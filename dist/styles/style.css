@@ -77,6 +77,9 @@ html {
 
 .link-active {
   color: #ff8b38;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .navbar-items {
